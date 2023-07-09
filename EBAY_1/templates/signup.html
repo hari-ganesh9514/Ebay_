@@ -1,0 +1,18 @@
+{% extends "front_page.html" %}
+{% block body %}
+    <form action="/register_user" method ="post">
+        <div class="px-2">
+            <h2>Signup here if you are new</h2>
+            <br><label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name"></br>
+            <br><label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email"></br>
+            <br><label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter Your password"></br>
+        </div>
+    </form>
+    <div>
+        <button type="submit" value="submit" class="px-2 mx-2 btn-primary">
+            Register    
+        </div>
+{% endblock %}
